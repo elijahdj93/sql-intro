@@ -8,3 +8,26 @@
 -- ('Nala', 'lion', 2),
 -- ('Marie', 'cat', 1),
 -- ('Flounder', 'fish', 8);
+
+CREATE TABLE animals ( 
+    id SERIAL PRIMARY KEY, 
+    name VARCHAR(50), 
+    type TEXT, 
+    age INTEGER 
+);
+
+SELECT * FROM animals;
+
+DELETE 
+FROM animals
+WHERE type = 'lion';
+
+
+DELETE 
+FROM animals
+WHERE name LIKE 'M%';
+
+
+DELETE 
+FROM animals
+WHERE age < 9;
